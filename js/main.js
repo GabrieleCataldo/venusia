@@ -100,21 +100,48 @@ internalLinks.forEach(
                 event.preventDefault();
 
 
-                target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
+/*
+    Se il link porta alla sezione Termini,
+    apriamo prima la finestra.
+*/
+
+if (
+    targetId === "#termini" &&
+    target.tagName === "DETAILS"
+) {
+
+    target.open = true;
+
+}
 
 
-                /*
-                    Manteniamo l'URL pulito.
-                */
+/*
+    Aspettiamo un istante affinché il browser
+    ricalcoli l'altezza della pagina dopo
+    l'apertura della finestra.
+*/
 
-                history.replaceState(
-                    null,
-                    "",
-                    window.location.pathname
-                );
+requestAnimationFrame(
+    () => {
+
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+);
+
+
+/*
+    Manteniamo l'URL pulito.
+*/
+
+history.replaceState(
+    null,
+    "",
+    window.location.pathname
+);
 
             }
         );
@@ -269,12 +296,15 @@ const revealElements =
         .gallery-main,
         .gallery-small,
         .advantage,
-        .service-item,
+        .amenity-group,
         .neighbourhood-content,
+        .around-category,
         .nearby-card,
+        .travel-card,
+        .stay-card,
+        .explore-card,
         .guest-info-grid article,
         .reviews-section > *,
-        .faq-list,
         .contact-section > *
         `
     );
