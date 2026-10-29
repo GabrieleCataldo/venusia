@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Venusia Luxury Colosseo | Rome</title>
+
+    <meta
+        name="description"
+        content="Welcome to Venusia Luxury Colosseo in Rome. Choose your language to discover the apartment and useful information for your stay."
+    >
+
+    <!-- FAVICON -->
+
+    <link
+        rel="icon"
+        href="/favicon.ico?v=4"
+        type="image/x-icon"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png?v=4"
+    >
+
+    <!-- SOCIAL PREVIEW -->
+
+    <meta
+        property="og:title"
+        content="Venusia Luxury Colosseo | Rome"
+    >
+
+    <meta
+        property="og:description"
+        content="A welcoming apartment in central Rome for up to four guests, within easy reach of the Colosseum and Metro Line A."
+    >
+
+    <meta
+        property="og:image"
+        content="https://venusia-luxury-colosseo.pages.dev/assets/images/venusia-social-preview.jpg?v=3"
+    >
+
+    <meta
+        property="og:image:secure_url"
+        content="https://venusia-luxury-colosseo.pages.dev/assets/images/venusia-social-preview.jpg?v=3"
+    >
+
+    <meta
+        property="og:image:type"
+        content="image/jpeg"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Living room at Venusia Luxury Colosseo in Rome"
+    >
+
+    <meta
+        property="og:url"
+        content="https://venusia-luxury-colosseo.pages.dev/"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Venusia Luxury Colosseo"
+    >
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Venusia Luxury Colosseo | Rome"
+    >
+
+    <meta
+        name="twitter:description"
+        content="A welcoming apartment in central Rome for up to four guests, within easy reach of the Colosseum and Metro Line A."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://venusia-luxury-colosseo.pages.dev/assets/images/venusia-social-preview.jpg?v=3"
+    >
+
+    <meta
+        name="theme-color"
+        content="#8b4338"
+    >
+
+    <!-- LANGUAGE ALTERNATES -->
+
+    <link
+        rel="alternate"
+        hreflang="en"
+        href="https://venusia-luxury-colosseo.pages.dev/en/"
+    >
+
+    <link
+        rel="alternate"
+        hreflang="it"
+        href="https://venusia-luxury-colosseo.pages.dev/it/"
+    >
+
+    <link
+        rel="alternate"
+        hreflang="fr"
+        href="https://venusia-luxury-colosseo.pages.dev/fr/"
+    >
+
+    <link
+        rel="alternate"
+        hreflang="es"
+        href="https://venusia-luxury-colosseo.pages.dev/es/"
+    >
+
+    <link
+        rel="alternate"
+        hreflang="pt"
+        href="https://venusia-luxury-colosseo.pages.dev/pt/"
+    >
+
+    <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://venusia-luxury-colosseo.pages.dev/"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --cream: #f5f0e8;
+            --warm-white: #fffdf9;
+            --brick: #8b4338;
+            --terracotta: #c8795a;
+            --green: #24342d;
+            --text: #242220;
+            --muted: #716c65;
+            --border: #d9d0c4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            min-height: 100%;
+            background: var(--cream);
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "DM Sans", sans-serif;
+            color: var(--text);
+            background: var(--cream);
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .language-page {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr);
+        }
+
+        .language-content {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 48px clamp(36px, 6vw, 96px);
+            position: relative;
+            z-index: 2;
+        }
+
+        .brand {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: fit-content;
+            text-decoration: none;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(25px, 2.1vw, 34px);
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            line-height: 0.95;
+        }
+
+        .brand span {
+            margin-top: 8px;
+            font-family: "DM Sans", sans-serif;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.28em;
+            color: var(--brick);
+        }
+
+        .language-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 700px;
+            padding: 72px 0 54px;
+        }
+
+        .eyebrow {
+            margin-bottom: 20px;
+            color: var(--brick);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            max-width: 650px;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(50px, 6.1vw, 90px);
+            font-weight: 500;
+            line-height: 0.98;
+            letter-spacing: -0.035em;
+        }
+
+        h1 em {
+            color: var(--brick);
+            font-weight: 500;
+        }
+
+        .intro {
+            max-width: 545px;
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .language-label {
+            margin-top: 46px;
+            margin-bottom: 16px;
+            color: var(--text);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 11px;
+            max-width: 570px;
+        }
+
+        .language-link {
+            min-height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border: 1px solid var(--border);
+            background: rgba(255, 253, 249, 0.58);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease,
+                background 0.25s ease,
+                color 0.25s ease;
+        }
+
+        .language-link span:last-child {
+            color: var(--brick);
+            transition: transform 0.25s ease;
+        }
+
+        .language-link:hover,
+        .language-link:focus-visible {
+            border-color: var(--brick);
+            background: var(--warm-white);
+            transform: translateY(-2px);
+            outline: none;
+        }
+
+        .language-link:hover span:last-child,
+        .language-link:focus-visible span:last-child {
+            transform: translateX(3px);
+        }
+
+        .language-footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 11px;
+            letter-spacing: 0.04em;
+        }
+
+        .language-image {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            background: var(--green);
+        }
+
+        .language-image img {
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .language-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(36, 52, 45, 0.02) 0%,
+                    rgba(36, 52, 45, 0.08) 58%,
+                    rgba(36, 52, 45, 0.38) 100%
+                );
+            pointer-events: none;
+        }
+
+        .image-caption {
+            position: absolute;
+            left: 34px;
+            right: 34px;
+            bottom: 30px;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 20px;
+            color: var(--warm-white);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .image-caption span:last-child {
+            text-align: right;
+        }
+
+        @media (max-width: 960px) {
+            .language-page {
+                grid-template-columns: 1fr;
+            }
+
+            .language-content {
+                min-height: auto;
+                padding: 34px 28px 38px;
+            }
+
+            .language-main {
+                padding: 64px 0 48px;
+            }
+
+            h1 {
+                font-size: clamp(48px, 10vw, 78px);
+            }
+
+            .language-image {
+                min-height: 56vh;
+            }
+
+            .language-image img {
+                min-height: 56vh;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .language-content {
+                padding: 28px 20px 30px;
+            }
+
+            .brand {
+                font-size: 24px;
+            }
+
+            .language-main {
+                padding: 54px 0 42px;
+            }
+
+            h1 {
+                font-size: clamp(45px, 14vw, 64px);
+            }
+
+            .intro {
+                margin-top: 22px;
+                font-size: 15px;
+            }
+
+            .language-label {
+                margin-top: 36px;
+            }
+
+            .languages {
+                grid-template-columns: 1fr;
+            }
+
+            .language-link {
+                min-height: 58px;
+            }
+
+            .language-footer {
+                flex-direction: column;
+                gap: 7px;
+            }
+
+            .language-image {
+                min-height: 48vh;
+            }
+
+            .language-image img {
+                min-height: 48vh;
+            }
+
+            .image-caption {
+                left: 20px;
+                right: 20px;
+                bottom: 18px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="language-page">
+
+        <section class="language-content">
+
+            <a
+                href="/"
+                class="brand"
+                aria-label="Venusia Luxury Colosseo"
+            >
+                VENUSIA
+                <span>LUXURY COLOSSEO</span>
+            </a>
+
+
+            <div class="language-main">
+
+                <p class="eyebrow">
+                    ROME · ESQUILINO
+                </p>
+
+                <h1>
+                    Welcome to<br>
+                    <em>Venusia.</em>
+                </h1>
+
+                <p class="intro">
+                    Your home in Rome, just a short distance from the Colosseum.
+                    Choose your language to discover the apartment, our recommendations
+                    and everything you need for your stay.
+                </p>
+
+                <p class="language-label">
+                    Choose your language
+                </p>
+
+                <nav
+                    class="languages"
+                    aria-label="Language selection"
+                >
+
+                    <a
+                        class="language-link"
+                        href="/en/"
+                        lang="en"
+                    >
+                        <span>English</span>
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        class="language-link"
+                        href="/it/"
+                        lang="it"
+                    >
+                        <span>Italiano</span>
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        class="language-link"
+                        href="/fr/"
+                        lang="fr"
+                    >
+                        <span>Français</span>
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        class="language-link"
+                        href="/es/"
+                        lang="es"
+                    >
+                        <span>Español</span>
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        class="language-link"
+                        href="/pt/"
+                        lang="pt"
+                    >
+                        <span>Português</span>
+                        <span>→</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <footer class="language-footer">
+
+                <span>
+                    Via Principe Eugenio 40 · Rome, Italy
+                </span>
+
+                <span>
+                    CIN: IT058091C2BZFPK7UG
+                </span>
+
+            </footer>
+
+        </section>
+
+
+        <figure class="language-image">
+
+            <img
+                src="/assets/images/venusia-living-room.jpg.avif"
+                alt="Living room at Venusia Luxury Colosseo in Rome"
+            >
+
+            <figcaption class="image-caption">
+
+                <span>
+                    VENUSIA
+                </span>
+
+                <span>
+                    YOUR HOME IN ROME
+                </span>
+
+            </figcaption>
+
+        </figure>
+
+    </main>
+
+</body>
+
+</html>
